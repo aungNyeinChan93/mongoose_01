@@ -6,7 +6,7 @@ const testSchema = new Schema({
     phone: { type: Schema.Types.Number }
 });
 
-testSchema.index({ email: 1 }, { unique: true })
+// testSchema.index({ email: 1 }, { unique: true })
 
 const Test = model('Test', testSchema, 'tests');
 

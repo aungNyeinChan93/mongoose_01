@@ -5,6 +5,7 @@ import { loggerMiddleware } from './middlewares/loggerMiddleware.js';
 import testRouter from './routes/testRouter.js';
 import connectDB from './database/connectDB.js'
 import productRouter from './routes/productRouter.js';
+import userRouter from './routes/userRouter.js';
 
 // env config
 config();
@@ -33,6 +34,7 @@ const init = () => {
     // routes
     app.use('/api/tests', testRouter);
     app.use('/api/products', productRouter);
+    app.use('/api/users', userRouter);
 
 
     // Error Handle
